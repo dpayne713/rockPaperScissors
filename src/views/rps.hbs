@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <title>Rock, Paper, Scissors</title>
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+</head>
+<body>
+
+    <div class="body">
+
+        <div class="top">
+            <div class="top__display">
+                <div class="top__display-left"></div>
+                <div class="top__display-right">
+                    <span class="top__display-right-LABEL">Score</span>
+                    <span class="top__display-right-SCORE" id="SCORE">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="playArea">
+
+          <div class="playArea__top invisible width70rem">
+            <span class="playArea__top-TEXT">You Picked</span>
+            <span class="playArea__top-TEXT">The House Picked</span>
+          </div>
+
+          <div class="playArea__main width70rem">
+
+            <div class="playArea__main-background"></div>
+            
+            <div class="playArea__main-playPiece paper topLeft-small">
+              <div class="playArea__main-playPiece-OUTER-PAPER">
+                <div class="playArea__main-playPiece-OUTER-SHADOW"></div>
+                <div class="playArea__main-playPiece-INNER">
+                  <div class="playArea__main-playPiece-IMAGE-PAPER"></div>
+                </div> 
+              </div>
+            </div>
+            
+            <div class="playArea__main-playPiece scissors topRight-small">
+              <div class="playArea__main-playPiece-OUTER-SCISSORS">
+                <div class="playArea__main-playPiece-OUTER-SHADOW"></div>
+                <div class="playArea__main-playPiece-INNER">
+                  <div class="playArea__main-playPiece-IMAGE-SCISSORS"></div>
+                </div> 
+              </div>
+            </div>
+
+            <div class="playArea__main-playPiece rock bottomCenter-small">
+              <div class="playArea__main-playPiece-OUTER-ROCK">
+                <div class="playArea__main-playPiece-OUTER-SHADOW"></div>
+                <div class="playArea__main-playPiece-INNER">
+                  <div class="playArea__main-playPiece-IMAGE-ROCK"></div>
+                </div> 
+              </div>
+            </div>
+
+            <div class=" houseBlackCircle displayOFF"></div>
+           
+          </div>
+
+          <div class="playArea__main-reset displayOFF">
+            <span class="playArea__main-reset-text"></span>
+            <button class="playArea__main-reset-button" id="RESET">Play Again</button>
+          </div>
+
+        </div>
+
+        <div class="bottom">
+          <button class="bottom__rules-btn" id="RULES-BTN">Rules</button>
+          <a href="/"><button class="bottom__home-btn" id="HOME-BTN">Home</button></a>
+        </div>
+
+        <div class="rules displayOFF" id="RULES">
+          
+          <span class="rules__description">If player wins they gain 1 point. If house wins player looses a point. First to 5 wins</span>
+
+          <div class="rules__container">
+            
+            <div class="rules__container-top">
+              <span class="rules__container-top-text">Rules</span>
+              <div class="rules__container-top-close" id="RULES-CLOSE"></div>
+            </div>
+
+            <div class="rules__container-btm">
+              <div class="rules__image-rps" id="RULES-IMAGE"></div>
+            </div>
+            
+          </div>
+          
+
+          
+            
+          </div>
+        </div>
+
+    </div>
+
+
+
+  <script type="module" src="js/script.js"></script>
+
+</body>
+</html>

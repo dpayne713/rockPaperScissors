@@ -1,0 +1,19 @@
+{
+  "name": "rock-paper-scissors-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start" : "node src/app.js", 
+    "nodemon": "nodemon src/app.js", 
+    "sassWatch": "sass --watch src/dev/scss/style.scss src/public/stylesheets/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "sass": "^1.29.0"
+  }
+}
