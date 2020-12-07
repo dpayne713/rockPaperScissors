@@ -732,8 +732,6 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100vw;
-  height: 100vh;
   z-index: 100;
   background-color: #666666e5;
 }
@@ -743,7 +741,7 @@ body {
   background-color: var(--white);
   border-radius: 2rem;
   position: absolute;
-  top: 15rem;
+  top: 10rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -752,7 +750,7 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
-    padding: 30px 0 0 0;
+    padding: 10px 0 0 0;
   }
 }
 .rules__container-top {
@@ -767,7 +765,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .rules__container-top {
-    height: 16rem;
+    height: 10rem;
     flex-direction: column-reverse;
   }
 }
@@ -855,16 +853,15 @@ body {
 }
 
 .select {
-  height: 60rem;
   width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 4rem;
 }
 @media screen and (max-width: 700px) {
   .select {
-    height: 90vh;
     flex-direction: column;
   }
 }
