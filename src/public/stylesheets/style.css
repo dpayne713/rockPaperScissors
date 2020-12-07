@@ -38,13 +38,15 @@ body {
   box-sizing: border-box;
   font-family: "Barlow Semi Condensed", sans-serif;
   width: 100vw;
-  overflow-x: hidden;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow: hidden;
 }
 
 .body {
   background-image: linear-gradient(var(--backgroundGradientOne), var(--backgroundGradientTwo));
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: relative;
   padding: 4.8rem 0 0 0;
   overflow: hidden;
