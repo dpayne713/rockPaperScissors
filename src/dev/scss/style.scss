@@ -39,16 +39,6 @@
 
 html {
     font-size: 62.5%;
-
-    @media screen and (max-width: 700px) {
-        font-size: 55%; 
-    }
-
-    @media screen and (max-width: 600px) {
-        font-size: 30%; 
-    }
-
-  
 }
 
 body {
@@ -66,8 +56,8 @@ body {
     padding: 4.8rem 0 0 0; 
     overflow: hidden; 
 
-    @media screen and (max-width: 500px) {
-        padding: 10rem 0 0 0; 
+    @media screen and (max-width: 700px) {
+        padding: 5rem 0 0 0; 
     }
 }
 
@@ -85,6 +75,10 @@ body {
         justify-content: space-between;
         align-items: center;
         transform-origin: center top;
+
+        @media screen and (max-width: 700px) {
+            width: 95vw;
+        }
 
         &-left {
             display: block; 
@@ -123,6 +117,15 @@ body {
 
             margin-right: 2.4rem;
 
+            @media screen and (max-width: 700px) {
+                width: 12rem; 
+                height: 10rem; 
+            }
+            @media screen and (max-width: 500px) {
+                width: 12rem; 
+                height: 10rem; 
+            }
+
 
             &-LABEL {
                 font-size: 1.6rem;
@@ -143,9 +146,7 @@ body {
 
         }
     }
-    &__home {
 
-    }
 }
 
 @mixin playPieceOuter {
@@ -154,6 +155,16 @@ body {
     width: 30rem; 
     height: 30rem;  
     position: relative; 
+
+    @media screen and (max-width: 700px) {
+        width: 24rem; 
+        height: 24rem; 
+    }
+    
+    @media screen and (max-width: 500px) {
+        width: 15rem; 
+        height: 15rem; 
+    }
 }
 
 @mixin playPieceOuterBEFORE {
@@ -166,6 +177,17 @@ body {
     left: 0rem; 
     border-radius: 100rem;
     z-index: -1; 
+
+    @media screen and (max-width: 700px) {
+        width: 24rem; 
+        height: 24rem; 
+        bottom: -1rem; 
+    }
+    @media screen and (max-width: 500px) {
+        width: 15rem; 
+        height: 15rem; 
+        bottom: -.65rem; 
+    }
 }
 
 @mixin playPieceShadow {
@@ -177,6 +199,19 @@ body {
     top: 3.5rem;
     left: 4rem;  
     z-index: 0;
+
+    @media screen and (max-width: 700px) {
+        width: 17.6rem; 
+        height: 18.4rem; 
+        top: 2.8rem; 
+        left: 3.2rem; 
+    }
+    @media screen and (max-width: 500px) {
+        width: 11rem; 
+        height: 11.5rem; 
+        top: 1.75rem; 
+        left: 2rem; 
+    }
 }
 
 @mixin playPieceInner {
@@ -188,6 +223,19 @@ body {
     background-color: var(--white);
     top: 4.3rem; 
     left: 4rem; 
+
+    @media screen and (max-width: 700px) {
+        width: 17.6rem; 
+        height: 17.6rem; 
+        top: 3.44rem; 
+        left: 3.2rem; 
+    }
+    @media screen and (max-width: 500px) {
+        width: 11rem; 
+        height: 11rem; 
+        top: 2.15rem; 
+        left: 2rem;
+    }
 }
 
 @mixin playPieceImage {
@@ -202,6 +250,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 700px) {
+        width: 18.4rem; 
+        height: 18.4rem; 
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 11.5rem; 
+        height: 11.5rem; 
+    }
 }
 
 .playArea {
@@ -215,10 +273,11 @@ body {
 
     margin: 3rem auto 0 auto; 
 
-    @media screen and (max-width: 500px) {
-        padding: 10rem 0 0 0; 
-        height: 100%; 
+    @media screen and (max-width: 700px) {
+        
     }
+
+  
 
     &__top {
         
@@ -229,8 +288,8 @@ body {
         transition: all .3s ease-in-out;
 
         @media screen and (max-width: 500px) {
-            position: absolute; 
-            top: 55rem; 
+            position: absolute;
+            top: 12rem; 
             width: 100vw;  
             left: 50%; 
             transform: translateX(-50%);
@@ -257,6 +316,16 @@ body {
         margin: 0 auto; 
         transition: all .5s ease-in-out;
 
+        @media screen and (max-width: 700px) {
+            height: 40rem; 
+        }
+
+        @media screen and (max-width: 500px) {
+            
+            height: 22rem;
+            margin: 10rem auto 0 auto;  
+        }
+
 
         &-background {
             width: 43rem; 
@@ -270,11 +339,20 @@ body {
             position: absolute; 
             top: 50%; 
             left: 50%; 
-            transform: translate(-50%, -45%);
+            transform: translate(-50%, -50%);
 
             &-rpsls {
                 @extend .playArea__main-background;
                 background-image: url(../images/bg-pentagon.svg);
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 34rem; 
+                height: 34rem; 
+            }
+            @media screen and (max-width: 500px) {
+                width: 21.5rem; 
+                height: 21.5rem; 
             }
 
         }
@@ -291,6 +369,14 @@ body {
             border-radius: 100rem;
             cursor: pointer;
             z-index: 1; 
+            @media screen and (max-width: 700px) {
+                width: 24rem; 
+                height: 24rem; 
+            }
+            @media screen and (max-width: 500px) {
+                width: 15rem; 
+                height: 15rem; 
+            }
 
 
             &-OUTER {
@@ -396,13 +482,13 @@ body {
             width: 25rem; 
             height: 13rem; 
             position: absolute; 
-            top: 50%; 
+            top: 40%; 
             left: 50%; 
             transform: translate(-50%, -50%);
 
             @media screen and (max-width: 500px) {
-                height: 30rem; 
-                top: 80rem; 
+                height: 15rem; 
+                top: 25rem; 
                 width: 100vw;  
             }
 
@@ -647,7 +733,8 @@ body {
 
         @media screen and (max-width: 500px) {
             width: 90vw; 
-            margin: 0 auto; 
+            height: 30vh; 
+            margin: 0 auto 5rem auto; 
         }
 
         &-name {
@@ -751,31 +838,31 @@ body {
     top: 0; 
     left: 50%; 
     z-index: 1;
-    transform: translateY(-9rem) translateX(-50%) scale(.7);
+    transform: translateY(-9rem) translateX(-50%) scale(.65);
 }
 .topRight-small-rpsls {
     top: 28%; 
-    left: 45%; 
+    left: 85%; 
     z-index: 1;
-    transform: translateY(-7rem) translateX(50%) scale(.7);
+    transform: translateY(-7rem) translateX(-50%) scale(.65);
 }
 .topLeft-small-rpsls {
     top: 28%; 
-    left: 12%; 
+    left: 15%; 
     z-index: 1;
-    transform: translateY(-7rem) translateX(-50%) scale(.7);
+    transform: translateY(-7rem) translateX(-50%) scale(.65);
 }
 .bottomRight-small-rpsls {
     top: 100%; 
     left: 95%; 
     z-index: 1;
-    transform: translateY(-50%) translateX(-100%) scale(.7);
+    transform: translateY(-60%) translateX(-100%) scale(.65);
 }
 .bottomLeft-small-rpsls {
     top: 100%; 
     left: 5%; 
     z-index: 1;
-    transform: translateY(-50%) translateX(0) scale(.7);
+    transform: translateY(-60%) translateX(0) scale(.65);
 }
 
 
@@ -783,18 +870,31 @@ body {
 // DYNAMIC POSITIONS / ALL
 
 .leftBig  {
-    top: 50%; 
+    top: 40%; 
     left: 0; 
     transform: translateY(-50%);
     animation-name: bounce;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
+
+    @media screen and (max-width: 700px) {
+    
+    }
+    @media screen and (max-width: 500px) {
+        top: 15%
+    }
 }
 .rightBig {
-    top: 50%; 
+    top: 40%; 
     right: 0; 
     transform: translateY(-50%);
+    @media screen and (max-width: 700px) {
+    
+    }
+    @media screen and (max-width: 500px) {
+        top: 15%
+    }
 }
 
 .houseBlackCircle {
@@ -802,11 +902,21 @@ body {
     width: 30rem; 
     border-radius: 100rem;
     position: absolute; 
-    top: 50%; 
+    top: 40%; 
     right: 0; 
     transform: translateY(-50%) scale(.8);
     background-color: #00000056;
     z-index: 0; 
+
+    @media screen and (max-width: 700px) {
+        width: 24rem; 
+        height: 24rem; 
+    }
+    @media screen and (max-width: 500px) {
+        width: 15rem; 
+        height: 15rem; 
+        top: 15%; 
+    }
 }
 
 
@@ -815,13 +925,24 @@ body {
 
 .width70rem {
     width: 70rem; 
+
+    @media screen and (max-width: 700px) {
+        width: 56rem; 
+    }
+    @media screen and (max-width: 500px) {
+        width: 34rem; 
+    }
+
 }
 
 .width90rem {
     width: 90rem; 
 
+    @media screen and (max-width: 700px) {
+        width: 56rem; 
+    }
     @media screen and (max-width: 500px) {
-        width: 70rem; 
+        width: 34rem; 
     }
 }
 
@@ -847,24 +968,24 @@ body {
         transform: translateY(0); 
     }
     15% {
-        transform: translateY(-50%); 
+        transform: translateY(-30%); 
     }
     30% {
         transform: translateY(0);
     }
     45% {
-        transform: translateY(-50%);
+        transform: translateY(-30%);
     }
     60% {
         transform: translateY(0); 
     }
     75% {
-        transform: translateY(-50%); 
+        transform: translateY(-30%); 
     }
     90% {
         transform: translateY(0); 
     }
     100% {
-        transform: translateY(-50%); 
+        transform: translateY(-30%); 
     }
 }
