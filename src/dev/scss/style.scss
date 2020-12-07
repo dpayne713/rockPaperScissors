@@ -39,25 +39,29 @@
 
 html {
     font-size: 62.5%;
+    height: 100vh; 
 }
 
 body {
     box-sizing: border-box;
     font-family: 'Barlow Semi Condensed', sans-serif;
     width: 100vw; 
-    min-height: 100vh; 
-    min-height: -webkit-fill-available;
-    overflow: hidden;
+    height: 100%; 
+    height: -webkit-fill-available; 
+
+    overflow: hidden; 
 }
 
 .body {
     background-image: linear-gradient(var(--backgroundGradientOne), var(--backgroundGradientTwo));
     width: 100vw; 
-
     height: 100%; 
-    position: relative; 
-    padding: 4.8rem 0 0 0; 
+
+    
+
     overflow: hidden; 
+    position: relative; 
+    padding: 4.8rem 0 0 0;   
 
     @media screen and (max-width: 700px) {
         padding: 5rem 0 0 0; 
@@ -128,7 +132,6 @@ body {
                 width: 12rem; 
                 height: 10rem; 
             }
-
 
             &-LABEL {
                 font-size: 1.6rem;
@@ -268,13 +271,15 @@ body {
 .playArea {
 
     display: block; 
-
     width: 100vw;
     height: 55rem; 
+    
+
     
     position: relative; 
 
     margin: 3rem auto 0 auto; 
+
 
     @media screen and (max-width: 700px) {
         
@@ -721,7 +726,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
         height: 90vh; 
         flex-direction: column; 
     }
@@ -734,7 +739,7 @@ body {
         align-items: center;
         justify-content: space-evenly;
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 700px) {
             width: 90vw; 
             height: 30vh; 
             margin: 0 auto 5rem auto; 
@@ -745,7 +750,7 @@ body {
                 height: 9.9rem; 
                 width: 16.2rem;   
 
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 700px) {
                     height: 14rem; 
                     width: 22rem; 
                 }
@@ -764,7 +769,7 @@ body {
                 background-repeat: no-repeat;
                 background-position: center;
 
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 700px) {
                     height: 16rem; 
                     width: 22rem; 
                 }
@@ -782,7 +787,7 @@ body {
                 background-repeat: no-repeat;
                 background-position: center;
 
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 700px) {
                     width: 90vw; 
                     height: 100%; 
                     margin: 0 auto; 
@@ -798,7 +803,7 @@ body {
                 background-repeat: no-repeat;
                 background-position: center;
 
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 700px) {
                     width: 90vw; 
                     height: 100%; 
                     margin: 0 auto; 

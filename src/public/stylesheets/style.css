@@ -32,14 +32,15 @@
 
 html {
   font-size: 62.5%;
+  height: 100vh;
 }
 
 body {
   box-sizing: border-box;
   font-family: "Barlow Semi Condensed", sans-serif;
   width: 100vw;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100%;
+  height: -webkit-fill-available;
   overflow: hidden;
 }
 
@@ -47,9 +48,9 @@ body {
   background-image: linear-gradient(var(--backgroundGradientOne), var(--backgroundGradientTwo));
   width: 100vw;
   height: 100%;
+  overflow: hidden;
   position: relative;
   padding: 4.8rem 0 0 0;
-  overflow: hidden;
 }
 @media screen and (max-width: 700px) {
   .body {
@@ -858,7 +859,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .select {
     height: 90vh;
     flex-direction: column;
@@ -872,7 +873,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .select__selection {
     width: 90vw;
     height: 30vh;
@@ -887,7 +888,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .select__selection-name-rps {
     height: 14rem;
     width: 22rem;
@@ -901,7 +902,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .select__selection-name-rpsls {
     height: 16rem;
     width: 22rem;
@@ -916,7 +917,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .select__selection-image-rps {
     width: 90vw;
     height: 100%;
@@ -932,7 +933,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .select__selection-image-rpsls {
     width: 90vw;
     height: 100%;
