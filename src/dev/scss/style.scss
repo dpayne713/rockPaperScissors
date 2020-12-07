@@ -51,7 +51,9 @@ body {
 .body {
     background-image: linear-gradient(var(--backgroundGradientOne), var(--backgroundGradientTwo));
     width: 100vw; 
+
     height: 100vh;
+    height: -webkit-fill-available; 
     position: relative; 
     padding: 4.8rem 0 0 0; 
     overflow: hidden; 
